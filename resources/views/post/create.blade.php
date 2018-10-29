@@ -13,6 +13,7 @@
                 <textarea id="content" style="height:400px;max-height:500px;" name="content" class="form-control"
                           placeholder="这里是内容"></textarea>
             </div>
+            @include('layout.error')
             {{ csrf_field() }}
             <button type="submit" class="btn btn-default">提交</button>
         </form>

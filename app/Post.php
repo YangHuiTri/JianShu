@@ -14,4 +14,9 @@ class Post extends Model
 //    protected $fillable = ['title', 'content'];
     //protected $guarded;//不可以注入的字段
 
+    //关联用户表
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
+
 }
